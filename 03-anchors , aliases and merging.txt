@@ -1,0 +1,57 @@
+YAML Anchors (&), Aliases (*), and Merging (<<)
+
+&anchor: Give a name to a block of data.
+
+*alias: Reuse the data where the anchor was defined.
+
+<< merge key: Merge all key-value pairs from the anchor.
+
+Simple example 1 ::
+
+default_user: &user
+  name: Alice
+  age: 25
+  role: user
+
+admin_user:
+  <<: *user
+  role: admin
+💡 Explanation:
+&user — defines an anchor for default_user
+
+*user — alias refers to that anchor
+
+<<: *user — merges the key-values from default_user into admin_user
+
+role is overridden in admin_user
+
+example 2 ::
+
+defaults: &defaults
+  theme: dark
+  notifications: true
+  layout: grid
+
+user1:
+  <<: *defaults
+  theme: light
+
+user2:
+  <<: *defaults
+💡 Output Understanding:
+user1 inherits everything from defaults, but changes theme to light.
+
+user2 inherits all settings exactly as they are in defaults.
+
+Important Notes:
+
+You can only define one anchor per section.
+
+Aliases use the same indentation level as the content they're replacing.
+
+<< is only used to merge a map (i.e., key-value pairs), not lists.
+
+
+
+
+

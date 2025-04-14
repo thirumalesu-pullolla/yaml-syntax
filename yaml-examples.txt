@@ -1,0 +1,33 @@
+Comments and Special Characters
+
+	How to use #, escape characters, and quotes
+
+Complex/Nested Structures
+
+	Combining lists, maps, and objects inside each other
+
+	Real-world examples like configuration files
+
+YAML Data Types & Type Conversion
+
+	Strings, integers, booleans, nulls
+
+	Type tags (!!int, !!str, !!bool, etc.)
+
+YAML vs JSON (Interoperability)
+
+	Syntax comparison
+
+	YAML as a superset of JSON
+
+Best Practices & Common Mistakes
+
+	Do's and don'ts
+
+	Avoiding parsing errors
+
+YAML in Real Projects (Java/Spring Boot Context)
+
+	application.yml structure
+
+	Profiles, environment configs, property hierarchies

@@ -1,0 +1,49 @@
+Comments and Special Characters
+🔹 1. Comments in YAML
+Use the # symbol for comments.
+
+Anything after # on the same line is ignored.
+ 
+# This is a comment
+name: Alice  # Inline comment
+age: 25
+📝 Note:
+
+YAML doesn't support multi-line comments.
+
+Keep comments outside the value unless inline.
+
+🔹 2. Special Characters in YAML Strings
+Sometimes, you need to wrap a string in quotes to handle special characters or avoid parsing errors.
+
+🟡 a. Double Quotes (" ")  
+
+Allows escaping (\n, \t, etc.)
+
+Useful when the string contains :, #, \, or quotes.
+ 
+quote: "She said, \"YAML is awesome!\""
+path: "C:\\Users\\Alice"
+
+🟡 b. Single Quotes (' ')
+
+Everything is treated literally.
+
+No escaping required inside.
+ 
+sentence: 'Don\'t panic!'
+💡 Tip: Use single quotes when your string contains double quotes, and vice versa.
+
+🔹 3. Strings Starting with Special Characters
+
+Use quotes if your string starts with special characters like @, #, {, [, :, -
+
+handle: "@alice"
+topic: "#devtalks"
+emoji: ":smile:"
+✅ Summary Table
+Feature			Symbol		Notes
+Comment			#		Use for explanations or in-line comments
+Double Quoted String	"		Supports escape sequences, flexible
+Single Quoted String	'		Literal, no escape processing
+Special Characters	@, #, : etc.	Use quotes to avoid syntax errors

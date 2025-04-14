@@ -1,0 +1,34 @@
+YAML supports multi-line strings in two main styles:
+
+🔹 1. Literal Style (|)
+
+Preserves line breaks
+
+Good for code blocks, messages, etc.
+
+ 
+description: |
+  This is a multi-line description.
+  All line breaks
+  will be preserved exactly as written.
+
+🟢 Output (in memory or when parsed):
+
+This is a multi-line description.
+All line breaks
+will be preserved exactly as written.
+
+🔹 2. Folded Style (>)
+
+Converts newlines to spaces
+
+Useful for long sentences across lines
+
+summary: >
+  This is a folded style string.
+  Newlines will be replaced with spaces
+  when parsed.
+
+🟢 Output:
+ 
+This is a folded style string. Newlines will be replaced with spaces when parsed.

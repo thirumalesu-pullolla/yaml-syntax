@@ -1,0 +1,52 @@
+Syntax Rules Recap:
+Indentation = structure (Use 2 spaces per level — never tabs)
+
+Each nested level must be indented exactly 2 more spaces
+
+A nested structure can contain maps, lists, or a mix
+
+(1).Nested Map YAML syntax ::
+
+person:
+  name: Alice
+  age: 25
+  address:
+    street: 123 Maple St
+    city: Springfield
+    zip: 12345
+
+Explanation:
+
+person is the main key
+
+Its value is another map (object)
+
+address is a nested map within person
+
+(2).List inside a Map
+ 
+person:
+  name: Alice
+  hobbies:
+    - reading
+    - painting
+    - hiking
+
+Explanation:
+
+hobbies is a key with a list as value
+
+Each list item is 2 spaces indented from the hobbies key
+
+(3).Map inside a List (List of Maps)
+ 
+employees:
+  - name: John
+    dept: HR
+  - name: Sara
+    dept: IT
+📝 Explanation:
+
+employees is a list of objects/maps
+
+Each item starts with - and contains its own keys and values
