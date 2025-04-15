@@ -1,0 +1,85 @@
+Complex & Nested Structures
+YAML allows nesting of data using indentation. You can combine:
+
+Dictionaries inside lists
+
+Lists inside dictionaries
+
+Dictionaries inside dictionaries
+All through proper indentation.
+
+Dictionary Inside Dictionary (Nested Map)
+ 
+employee:
+  name: John
+  contact:
+    email: john@example.com
+    phone: 1234567890
+
+📝 Here:
+
+employee is a key
+
+Its value is a dictionary with name and contact
+
+contact itself is a nested dictionary
+
+🔹 2. List Inside Dictionary
+ 
+menu:
+  starters:
+    - Soup
+    - Salad
+  mains:
+    - Biryani
+    - Pasta
+📝 menu is a key, its value is a dictionary. Inside that, starters and mains are keys with list values.
+
+🔹 3. Dictionary Inside List
+ 
+users:
+  - name: Alice
+    age: 28
+  - name: Bob
+    age: 32
+
+📝 users is a list of dictionaries.
+
+🔹 4. Mixed Nesting
+ 
+school:
+  name: Green Valley High
+  address:
+    city: Mumbai
+    pin: 400001
+  students:
+    - name: Ravi
+      grade: A
+    - name: Sita
+      grade: B
+
+Here:
+
+school is a dictionary
+
+Inside it, address is a nested dictionary
+
+students is a list of dictionaries
+
+✅ YAML Nesting Rules Summary
+
+Structure		Example
+Dict inside Dict	contact -> email
+List inside Dict	menu -> starters: [list]
+Dict inside List	users: [ {name, age}, ... ]
+Mixed Nesting	Combos of above
+
+
+
+
+
+
+
+
+
+

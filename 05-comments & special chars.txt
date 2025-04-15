@@ -42,6 +42,7 @@ handle: "@alice"
 topic: "#devtalks"
 emoji: ":smile:"
 ✅ Summary Table
+
 Feature			Symbol		Notes
 Comment			#		Use for explanations or in-line comments
 Double Quoted String	"		Supports escape sequences, flexible

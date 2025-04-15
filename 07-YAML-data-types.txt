@@ -1,0 +1,13 @@
+YAML Data Types Overview
+YAML supports the following scalar data types:
+
+Type		Example
+String		"hello" or hello
+Integer		42, -10
+Float		3.14, -0.5
+Boolean		true, false, yes, no
+Null		null, ~, or just empty value
+Date/Time	2023-10-15, 2025-04-15T13:45:00Z
+
+
+

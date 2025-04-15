@@ -1,12 +1,3 @@
-Comments and Special Characters
-
-	How to use #, escape characters, and quotes
-
-Complex/Nested Structures
-
-	Combining lists, maps, and objects inside each other
-
-	Real-world examples like configuration files
 
 YAML Data Types & Type Conversion
 
